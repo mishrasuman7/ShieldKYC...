@@ -1,0 +1,27 @@
+# --- Python / backend ---
+venv/
+__pycache__/
+*.pyc
+.env
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.vite/
+
+# --- ShieldKYC runtime data (regenerated, can get large) ---
+backend/data/uploads/
+backend/data/faiss_index/
+backend/shieldkyc.db
+
+# --- ML model caches (huge, auto-download) ---
+.deepface/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --- Keep empty folder structure on fresh clone ---
+!backend/data/uploads/.gitkeep
+!backend/data/faiss_index/.gitkeep
